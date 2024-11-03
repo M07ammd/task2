@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --header-height: 5.5rem;
+  /*========== Colors ==========*/
+  --first-color: #1f2d3d;
+  --first-color-alt: #4f75ff;
+  --title-color: hsl(180, 4%, 98%);
+  --text-color: hsl(180, 4%, 72%);
+  /*========== Font weight ==========*/
+  --font-bold: 800;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--first-color);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.section {
+  padding-top: 6rem;
+}
+.section__title{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+/* -------------------button--------------- */
+.btn {
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform ease 0.3s, background-color ease 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn__prim {
+  background-color: var(--first-color-alt);
+  color: var(--title-color);
+}
+.btn__prim:hover {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+.btn__sec {
+  background-color: transparent;
+  color: var(--first-color-alt);
+  border: 2px solid var(--first-color-alt);
+}
+.btn__sec:hover {
+  background-color: var(--first-color-alt);
+  color: var(--title-color);
+}
+
+/* ----------Header--------------- */
+header {
+  height: var(--header-height);
+}
+.nav__bar {
+  position: fixed;
+  width: 100%;
+  background-color: var(--first-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0 10px 0;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+.nav__menu {
+  display: flex;
+  column-gap: 2rem;
+}
+.nav__logo {
+  color: var(--title-color);
+  font-size: 25px;
+  font-weight: var(--font-bold);
+  letter-spacing: 2px;
+}
+.nav__link {
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 550;
+}
+.nav__link:hover {
+  color: var(--first-color-alt);
+}
+.nav__btns {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+/* ---------------Home---------------- */
+.home__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 90px;
+  text-align: center;
+  height: 77vh;
+}
+
+.home__data h2 {
+  color: rgb(5, 170, 235);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.home__title {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.home__description {
+  font-size: 20px;
+  color: var(--text-color);
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.home__btns {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+/* product */
+.product__container{
+  /* height: 100vh; */
+  margin-bottom: 100px;
+}
+.cards{
+  display: flex;
+  column-gap: 3rem;
+}
+.card__content{
+  background-color: white;
+  padding: 40px 50px;
+  color: black;
+  border-radius: 5px;
+}
+.card__content:hover{
+  background-color: var(--first-color-alt);
+  color: white;
+  box-shadow: 0px 15px 20px rgba(255, 253, 253, 0.25);
+}
+.card__content span{
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 20px 30px;
+  font-size: 2rem;
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.card__content:nth-child(1) span {
+  background-color: #9772fe;
+  box-shadow: 2px 10px 40px #9772fe8c;
+}
+
+.card__content:nth-child(2) span {
+  background-color: #4edffe;
+  box-shadow: 2px 10px 40px #4edffe8c;
+}
+
+.card__content:nth-child(3) span {
+  background-color: #f2b8eb;
+  box-shadow: 2px 10px 40px #f2b8eb8c;
+}
+.card__title{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.border{
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 15px;
+}
+.card__content:hover .border {
+  background-color: white ;
+}
+.card__description{
+  color: var(--text-color);
+}
